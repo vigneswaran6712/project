@@ -9,7 +9,7 @@ pipeline {
   stages {
     stage('Checkout Code') {
       steps {
-        git 'https://github.com/your-username/flask-ecr-demo.git'
+        git credentialsId: 'github-token', url: 'https://github.com/vigneswaran6712/project.git'
       }
     }
 
